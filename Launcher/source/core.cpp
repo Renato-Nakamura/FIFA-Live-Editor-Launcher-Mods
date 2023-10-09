@@ -149,7 +149,7 @@ void Core::RunGame() {
     logger.Write(LOG_INFO, "[%s]", __FUNCTION__);
 
     std::string proc_name = g_Config.launch_values.game_proc_name;
-    std::wstring params = L"";
+    std::wstring params = L"-dataPath FIFAModData";
 
     if (g_Config.launch_values.is_trial) {
         proc_name = g_Config.launch_values.game_proc_name_trial;
